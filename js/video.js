@@ -7,12 +7,11 @@ window.addEventListener("load", function() {
 	console.log(video);
 	video.autoplay = false;
 	video.loop = false;
-
-	this.document.querySelector("#volume").textContent = (video.volume * 100) + "%";
 });
 
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
+	this.document.querySelector("#volume").textContent = (video.volume * 100) + "%";
 	video.play();
 });
 
